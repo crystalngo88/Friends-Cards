@@ -11,6 +11,13 @@ class App extends Component {
     ladies
   };
 
+
+  //selectLady should save selected id into an array, shuffle images. if selected id = something in array, player loses and gains a Loss Point, if not, add a Win point
+// selectLady = id => {
+//   const ladies = this.state.ladies.filter(lady => lady.id !== id);
+//   this.setState({ ladies });
+// }
+
   removeLady = id => {
     // Filter this.state.ladies for ladies with an id not equal to the id being removed
     const ladies = this.state.ladies.filter(lady => lady.id !== id);
